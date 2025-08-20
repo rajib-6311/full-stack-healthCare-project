@@ -2,5 +2,8 @@
 
 .active {
     border-bottom: 1px solid blue;
-    
+}
+
+::-webkit-scrollbar{
+    @apply hidden
 }
