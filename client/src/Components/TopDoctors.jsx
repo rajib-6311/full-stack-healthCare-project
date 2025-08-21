@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { doctors } from "../assets/assets_frontend/assets";
 
 
 const TopDoctors = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="flex items-center flex-col">
             <h1 className="text-4xl font-bold">Top Doctor to Book </h1>
@@ -10,7 +13,9 @@ const TopDoctors = () => {
             <div className="grid grid-cols-4 gap-5 mt-12">
                 {
                     doctors.slice(0,12).map((item, index)=>(
-                       <div className="border border-blue-400 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500">
+                       <div 
+                       onClick={()=> navigate(`/appointment/${item._id}`)}
+                       className="border border-blue-400 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500">
                         <img className="bg-blue-50" src={item.image} alt="" />
                         <div className="p-4">
                             <div className="flex items-center gap-2 text-sm text-center text-green-500">
