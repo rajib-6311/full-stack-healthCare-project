@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SpecialtyMenu = () => {
   return (
-    <div className="py-14 text-center">
+    <div id="speciality" className="py-14 text-center">
       <h1 className="text-3xl font-bold">Find by Specialty</h1>
       <p className="sm:w-1/3 mx-auto">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,

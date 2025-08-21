@@ -77,7 +77,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className="uppercase hover:border-b-1"
-                to="/all-doctors"
+                to="/doctors"
               >
                 All Doctors
               </NavLink>

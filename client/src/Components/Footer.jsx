@@ -3,7 +3,7 @@
 
 const Footer = () => {
     return (
-        <div className="">
+        <div className="mt-20">
             <footer class="flex flex-col bg-gray-200 items-center justify-around w-full py-16 text-sm text-gray-800/70 rounded-lg">
                 <div class="flex items-center gap-8">
                     <a href="#" class="font-medium text-gray-500 hover:text-black transition-all">
